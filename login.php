@@ -20,7 +20,7 @@ if(isset($_POST['login'])) {
     $exist = $recup->rowCount();
 
     if ($exist==0) {
-        $erreur= 'Pseudo ou mot de pass incorrect';
+        $erreur= 'Pseudo ou mot de passe incorrecte';
     }else{
         $_SESSION['pseudo']=$donnee['pseudo'];
         header('Location:index.php');
